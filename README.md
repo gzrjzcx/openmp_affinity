@@ -23,7 +23,7 @@ This is a practical project for how to finish a real coursework, there are three
 - `includes\: contains the basic shared .h files like data structure and global macros.`
 - `res\: contains the dependent resources or generated resourcese`
 - `scripts\: contains the additional scripts like auto-running or auto-ploting`
-- `scr\: contains all source C files(.h/.c), also including main.c.` \
+- `scr\: contains all source C files(.h/.c), also including main.c.`
 - `bin\: contains all generated executable files.`
 - `obj\: contains all generated objective files.`
 - `out\: contains all generated output files.`

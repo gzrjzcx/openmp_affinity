@@ -45,6 +45,9 @@ rm -f ${temp_testfile} ${temp_last_element} ${temp_merge}
 # echo "${#EXEC[@]}"         ---> 5 (the number of all items)
 # echo "$((${#EXEC[@]}-1))". ---> 4 (two pairs of brackets are used for -1)
 # seq -w 0 $((${#EXEC[@]}-1)). ---> get a sequence from 0 to 4
+# $() is the command substitute, similar to the ``, it means the subshell will execute
+# the command firstly and then return the result.
+# As for mathmatic calculation, the () is necessary to define this is an expression
 
 # The reason for combining 4 lines into 1 line is that the original code print results
 # as 4 lines, and the reason for combine 2 lines into 1 line is that we need combine 
