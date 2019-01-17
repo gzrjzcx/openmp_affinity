@@ -8,6 +8,6 @@ This is a practical project for how to finish a real coursework, there are three
 
 ### what is included at this C program project
 root
-  - includes/
-  - res/
-  - scripts/
+  |- includes/
+  |- res/
+  |- scripts/
