@@ -8,47 +8,22 @@ This is a practical project for how to finish a real coursework, there are three
 
 ### what is included at this C program project
 ```
-├── Makefile
-├── README.md
 ├── bin
-│   ├── affinity
-│   ├── best_schedule_loop_1
-│   ├── best_schedule_loop_2
-│   ├── runtime
-│   └── serial
 ├── includes
-│   ├── affinity_structs.h
-│   ├── macros.h
-│   └── resource.h
 ├── obj
-│   ├── affinity.o
-│   ├── main.o
-│   ├── mem.o
-│   ├── omplib.o
-│   └── workload.o
 ├── out
 ├── res
-│   ├── efficiency.eps
-│   ├── execution_time_loop1.eps
-│   ├── execution_time_loop2.eps
-│   ├── speed_up.eps
-│   └── test_results.csv
 ├── scripts
-│   ├── autotest.sh
-│   ├── autotest_backend.pbs
-│   └── plot.py
 └── src
     ├── affinity
-    │   ├── affinity.c
-    │   └── affinity.h
     ├── loops
-    │   ├── workload.c
-    │   └── workload.h
-    ├── main.c
     ├── omplib
-    │   ├── omplib.c
-    │   └── omplib.h
     └── utils
-        ├── mem.c
-        └── mem.h
 ```
+- `includes\: contains the basic shared .h files like data structure and global macro.`
+- `res\: contains the dependent resources or generated resourcese`
+- `scripts\: contains the additional scripts like auto-running or auto-ploting`
+- `scr\: contains all source C files(.h/.c), also including **main.c**.` \
+- `bin\: contains all generated executable files.`
+- `obj\: contains all generated objective files.`
+- `out\: contains all generated output files.`
