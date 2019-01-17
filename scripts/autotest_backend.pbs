@@ -1,0 +1,16 @@
+#!/bin/bash --login
+#
+#PBS -N tp_test
+#PBS -l place=excl
+#PBS -l select=1:ncpus=36
+#PBS -l walltime=0:20:0
+#PBS -A d167-s1702794
+#PBS -e out 
+#PBS -o out
+
+cd $PBS_O_WORKDIR
+ 
+ 
+module load intel-compilers-17
+ 
+./scripts/autotest.sh
