@@ -1,0 +1,36 @@
+-D<name>[=<value>]
+       Define the macro <name> and associate it with the  speci-
+       fied  <value>.   Equivalent  to  a  #define preprocessing
+       directive.
+
+       DEFAULT: -D<name> defines the macro <name> with a <value>
+       of 1.
+
+-Wall  Enable all warnings.
+
+-I<dir>
+              Add directory <dir> to include file search path. For mul-
+              tiple  search directories, multiple  I<dir> commands must
+              be used. The compiler searches  directories  for  include
+              files  in the following order: 1. Directory of the source
+              file that contains the include. 2. Directories  specified
+              by the -I option.
+
+mkdir -d 	  With the help of mkdir -p command you can create sub-directories of 				a directory. It will create parent directory first, if it doesn't 					exist. But if it already exists, then it will not print an error 				message and will move further to create sub-directories.
+
+-C            Preserve comments in preprocessed source output. Comments
+              following preprocessing directives are not preserved.
+
+make -B ‘--always-make’
+
+$@ -- the target of the current rule
+$^ -- all the dependencies of the current rule
+$< -- the first dependency of the current rule
+$* -- the stem with which the rule matched (used in bash)
+%  -- wildcard in Makefile (used in Makefile)
+
+awk:
+
+1.The next statement forces awk to immediately stop processing the current record and go on to the next record. This means that no further rules are executed for the current record, and the rest of the current rule’s action isn’t executed.
+
+2.NR the number of current Record.
