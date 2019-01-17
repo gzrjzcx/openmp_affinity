@@ -29,7 +29,7 @@ This is a practical project for how to finish a real coursework, there are three
 - `out\: contains all generated output files.`
 
 ## 2. Usage
-##### 1. Options
+### 1. Options
 The program is designed to support different schedulings options with different macros. Therefore, we can use several flags to control which version codes are compiled:
 - Without flag, the defualt serial codes are compiled.
 - `-DAFFINITY`: Choose to apply user-defined 'Affinity' scheduling.
@@ -39,11 +39,11 @@ The program is designed to support different schedulings options with different 
 
 **Note that one can only choose one 'define' flag at one time, if no flag is specified, the serial version of the code is executed.**
 
-##### 2. Prerequisites
+### 2. Prerequisites
 - Compiler: [icc](https://software.intel.com/sites/default/files/m/d/4/1/d/8/icc.txt)
 - Build Tool: [make](https://www.gnu.org/software/make/)
 
-##### 3. Building
+### 3. Building
 1. To compile all the avalible versions of the code use:
 ```sh
 $ make all
@@ -61,14 +61,14 @@ $ make bin/runtime -B
 $ make bin/best_schedule_loop_1 -B
 $ make bin/best_schedule_loop_2 -B
 ```
-##### 4.Cleaning
+### 4.Cleaning
 
 To clean the project run:
 ```sh
 $ make clean
 ```
 
-##### 5.Running
+### 5.Running
 To execute the serial code:
 ```sh
 $ ./bin/serial
@@ -93,7 +93,7 @@ The available scheduling options are:
 - `GUIDED,n`: Guided scheduler
 where `n` is the selected chunksize.
 
-##### 5.Testing
+### 5.Testing
 ```sh
 $ make test
 ```
